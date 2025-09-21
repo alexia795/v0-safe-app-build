@@ -1,30 +1,52 @@
-# Safe app build
+# 🚀 Safe Wallet Pro
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+An advanced Safe{Wallet} application for secure multi-signature crypto management with automated deployment.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/alexias-projects-88b5c178/v0-safe-wallet-pro)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/2MyoCpmL9di)
+## 🔑 Overview
+Safe Wallet Pro is a **Safe App** that lets you:
+- Manage multi-sig wallets across Ethereum and other EVM networks  
+- Automate transaction approvals and asset transfers  
+- Sync with the Safe{Wallet} ecosystem for reliable, trust-minimized execution  
 
-## Overview
+This repository is continuously deployed to **Vercel**.  
+Every push to `main` triggers a fresh build and automatic deployment.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🌐 Deployment
+Your production build is live at:  
+👉 **[Safe Wallet Pro on Vercel](https://vercel.com/alexias-projects-88b5c178/v0-safe-wallet-pro)**
 
-## Deployment
+## 🛠️ Build & Development
+1. **Clone & Install**
+   ```bash
+   git clone https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
+   cd <YOUR_REPO>
+   npm install
+   ```
+2. **Environment**
+   - Create a `.env.local` file and add your Safe configuration:
+     ```env
+     NEXT_PUBLIC_SAFE_ADDRESS=0xFDf84a0e7D07bC56f7De56696fc409704cC83a24
+     NEXT_PUBLIC_RPC_URL=https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY
+     ```
+3. **Run locally**
+   ```bash
+   npm run dev
+   ```
+   App will be available at [http://localhost:3000](http://localhost:3000)
 
-Your project is live at:
+4. **Deploy**
+   - Push changes to `main`.
+   - Vercel automatically builds and updates the live site.
 
-**[https://vercel.com/alexias-projects-88b5c178/v0-safe-wallet-pro](https://vercel.com/alexias-projects-88b5c178/v0-safe-wallet-pro)**
+## ⚡ Features
+- **Multi-Signature Security** – Configurable signer thresholds  
+- **Automated Transfers** – Batch or single-asset Safe transactions  
+- **Cross-Chain Support** – Ethereum, Arbitrum, Polygon, and more  
+- **Real-Time Sync** – Live updates via Safe Transaction Service  
 
-## Build your app
+## 📄 License
+MIT – feel free to use and adapt.
 
-Continue building your app on:
-
-**[https://v0.app/chat/projects/2MyoCpmL9di](https://v0.app/chat/projects/2MyoCpmL9di)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### Next Steps
+- Connect your Safe{Wallet} or WalletConnect compatible wallet
+- Approve/execute Safe transactions directly from the live app
