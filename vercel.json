@@ -1,18 +1,30 @@
 {
   "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./",
   "builds": [
     {
-      "src": "next.config.js",
+      "src": "package.json",
       "use": "@vercel/next"
     }
   ],
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./",
+  "routes": [
+    {
+      "src": "/safe-app.json",
+      "dest": "/safe-app.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
   "env": {
     "NEXT_PUBLIC_SAFE_ENV": "production",
-    "NEXT_PUBLIC_APP_URL": "https://safe-wallet-pro.vercel.app"
+    "NEXT_PUBLIC_APP_URL": "https://safe-wallet-pro.vercel.app",
+    "NEXT_PUBLIC_CHAIN_IDS": "1,42161,137",
+    "NEXT_PUBLIC_SIGNER_ADDRESS": "0xFDf84a0e7D07bC56f7De56696fc409704cC83a24"
   }
 }
