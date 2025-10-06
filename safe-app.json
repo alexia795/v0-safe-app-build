@@ -1,0 +1,20 @@
+{
+  "name": "Safe Wallet Pro",
+  "description": "A professional Safe{Wallet} app for secure asset management, governance, and automation across multiple EVM networks.",
+  "iconPath": "public/icon.png",
+  "url": "https://safe-wallet-pro.vercel.app",
+  "safeAddress": "0xFDf84a0e7D07bC56f7De56696fc409704cC83a24",
+  "verified": true,
+  "version": "1.0.0",
+  "developer": {
+    "name": "SafeVault Labs",
+    "url": "https://safe-wallet-pro.vercel.app"
+  },
+  "chainIds": [1, 42161, 137],
+  "categories": ["DeFi", "Asset Management", "Governance"],
+  "socials": {
+    "github": "https://github.com/thegoodeth/safe-wallet-pro",
+    "twitter": "https://twitter.com/safe"
+  },
+  "tags": ["safe", "wallet", "automation", "multisig", "defi"]
+}
